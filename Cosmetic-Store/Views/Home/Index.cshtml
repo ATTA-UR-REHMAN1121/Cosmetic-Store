@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/site.css" rel="stylesheet" />
+<main>
+    <!-- Product Slider Section -->
+    <section class="product-slider">
+        <div class="slide active">
+            <img src="~/images/box-bundles-11-400x533.jpg" />
+         
+            <div class="slide-info">
+                <h3>Product 1</h3>
+                <p>$25.00</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="~/images/brush-2491235_640.jpg" />
+            
+            <div class="slide-info">
+                <h3>Product 2</h3>
+                <p>$30.00</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="~/images/colors-291851_640.jpg" />
+          
+            <div class="slide-info">
+                <h3>Product 3</h3>
+                <p>$20.00</p>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="~/images/images.jpeg" />
+               
+                <h3>Featured 1</h3>
+                <p>$20.00</p>
+            </div>
+            <div class="product-card">
+                <img src="~/images/lipsticks-5893480_640.jpg" />
+                
+                <h3>Featured 2</h3>
+                <p>$35.00</p>
+            </div>
+            <div class="product-card">
+                <img src="~/images/makeup-3081015_640.jpg" />
+                
+                <h3>Featured 3</h3>
+                <p>$45.00</p>
+            </div>
+            <div class="product-card">
+                <img src="~/images/skin-polishing-pack-002-400x533.jpg" />
+                
+                <h3>Featured 4</h3>
+                <p>$50.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section class="promotions">
+        <h2>Special Offers</h2>
+        <div class="promotion">
+            <p>Get 20% off on all skincare products!</p>
+        </div>
+        <div class="promotion">
+            <p>Buy 2, get 1 free on selected makeup items!</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Customer Reviews</h2>
+        <div class="testimonial">
+            <p>"Amazing products! Highly recommend."</p>
+            <p><strong>- Jane Doe</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Excellent customer service and fast shipping."</p>
+            <p><strong>- John Smith</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Great quality and beautiful packaging."</p>
+            <p><strong>- Sarah Lee</strong></p>
+        </div>
+    </section>
+    <!-- Feedback Form -->
+    <form id="feedback-form">
+        <h3>Leave a Review</h3>
+        <div class="form-group">
+            <label for="feedback-name">Name:</label>
+            <input type="text" id="feedback-name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="feedback-email">Email:</label>
+            <input type="email" id="feedback-email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="feedback-rating">Rating:</label>
+            <select id="feedback-rating" name="rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="feedback-comment">Comment:</label>
+            <textarea id="feedback-comment" name="comment" rows="4" placeholder="Enter your feedback" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</main>
